@@ -1,0 +1,34 @@
+{
+  "name": "lit-ui-kit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -s ./public -p 6006",
+    "build-storybook": "build-storybook",
+    "tsc:watch": "tsc --watch --outDir dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@storybook/addon-actions": "^6.0.21",
+    "@storybook/addon-essentials": "^6.0.21",
+    "@storybook/addon-links": "^6.0.21",
+    "@storybook/addons": "^6.0.21",
+    "@storybook/preset-scss": "^1.0.2",
+    "@storybook/theming": "^6.0.21",
+    "@storybook/web-components": "^6.0.21",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.2.2",
+    "lit-html": "^1.3.0",
+    "react-is": "^16.13.1",
+    "sass-loader": "^10.0.2",
+    "style-loader": "^1.2.1"
+  },
+  "dependencies": {
+    "typescript": "^4.0.2"
+  }
+}
