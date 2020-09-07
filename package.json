@@ -1,12 +1,12 @@
 {
   "name": "lit-starter-kit",
   "version": "0.0.2",
-  "description": "A fast starting point for developing with Web-components",
+  "description": "A fast starting point to develo with Web-components",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook",
+    "storybook:start": "start-storybook -s ./public -p 6006",
+    "storybook:build": "build-storybook --static-dir ./public --output-dir build/applications/storybook",
+    "storybook:deploy": "storybook-to-ghpages --existing-output-dir build/applications/storybook",
     "tsc:watch": "tsc --watch --pretty"
   },
   "keywords": [],
@@ -29,7 +29,13 @@
     "style-loader": "^1.2.1"
   },
   "dependencies": {
+    "@storybook/storybook-deployer": "^2.8.6",
     "typescript": "^4.0.2"
+  },
+  "storybook-deployer": {
+    "gitUsername": "dryamov",
+    "gitEmail": "dryamov.dev@gmail.com",
+    "commitMessage": "Deploy Storybook to GitHub Pages"
   },
   "repository": "https://github.com/Dryamov/lit-starter-kit"
 }

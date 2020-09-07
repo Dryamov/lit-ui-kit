@@ -3,7 +3,6 @@ import { themes } from '@storybook/theming';
 export const parameters = {
   controls: { expanded: true },
   backgrounds: {
-    default: 'light',
     values: [
       {
         name: 'light',
