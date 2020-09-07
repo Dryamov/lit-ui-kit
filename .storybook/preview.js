@@ -1,4 +1,11 @@
 import { themes } from '@storybook/theming';
+import '@storybook/addon-console';
+import { setConsoleOptions, withConsole } from '@storybook/addon-console';
+
+
+setConsoleOptions({
+  panelExclude: [],
+  });
 
 export const parameters = {
   controls: { expanded: true },

@@ -29,6 +29,7 @@
     "style-loader": "^1.2.1"
   },
   "dependencies": {
+    "@storybook/addon-console": "^1.2.1",
     "@storybook/storybook-deployer": "^2.8.6",
     "typescript": "^4.0.2"
   },
