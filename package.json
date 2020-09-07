@@ -4,10 +4,10 @@
   "description": "A fast starting point to develo with Web-components",
   "main": "index.js",
   "scripts": {
-    "storybook:start": "start-storybook -s ./public -p 6006",
+    "storybook:serve": "start-storybook -s ./public -p 6006",
     "storybook:build": "build-storybook --static-dir ./public --output-dir build/applications/storybook",
     "storybook:deploy": "storybook-to-ghpages --existing-output-dir build/applications/storybook",
-    "tsc:watch": "tsc --watch --pretty"
+    "typescript:watch": "tsc --watch --pretty"
   },
   "keywords": [],
   "author": "Dryamov Vycheslav <dryamov@dryamov.dev@gmail.com>",
