@@ -3,12 +3,12 @@ import '@storybook/addon-console';
 import { setConsoleOptions } from '@storybook/addon-console';
 import { storiesOf } from '@storybook/web-components';
 
- setConsoleOptions({
+setConsoleOptions({
   panelExclude: [/\[HMR\]/],
-  log: '📜 Log', 
+  log: '📜 Log',
   warn: '⚠️ Warning',
   error: '❌ Error'
-  });
+});
 export const parameters = {
   controls: { expanded: true },
   backgrounds: {
@@ -16,7 +16,7 @@ export const parameters = {
       {
         name: 'light',
         value: '#ffffff'
-      }, 
+      },
       {
         name: 'dark',
         value: '#333333'
@@ -35,10 +35,10 @@ export const parameters = {
   docs: {
     theme: themes.light,
   },
-} 
+}
 const req = require.context('../src', true, /\.stories\.(js|jsx|ts|tsx)$/);
 storiesOf(req, module)
-if (module.hot) { 
+if (module.hot) {
   module.hot.accept(req.id, () => {
     const currentLocationHref = window.location.href;
     window.history.pushState(null, null, currentLocationHref);
