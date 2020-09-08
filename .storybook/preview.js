@@ -1,25 +1,14 @@
 import { themes } from '@storybook/theming';
 import '@storybook/addon-console';
-import { setConsoleOptions, withConsole } from '@storybook/addon-console';
-import { storiesOf, addDecorator } from '@storybook/web-components';
-// addDecorator((storyFn, context) => withConsole()(storyFn)(context)); 
-
-// storiesOf('withConsole', module)
-//  .addDecorator((storyFn, context) => withConsole()(storyFn)(context))
-//  .add('with Log', () => <Button onClick={() => console.log('Data:', 1, 3, 4)}>Log Button</Button>)
-//  .add('with Warning', () => <Button onClick={() => console.warn('Data:', 1, 3, 4)}>Warn Button</Button>)
-//  .add('with Error', () => <Button onClick={() => console.error('Test Error')}>Error Button</Button>)
-//  .add('with Uncatched Error', () =>
-//    <Button onClick={() => console.log('Data:', T.buu.foo)}>Throw Button</Button>
-//  )
+import { setConsoleOptions } from '@storybook/addon-console';
+import { storiesOf } from '@storybook/web-components';
 
  setConsoleOptions({
-  panelExclude: [],
-  log: 'console1',
-  warn: 'warn2',
-  error: 'error3'
+  panelExclude: [/\[HMR\]/],
+  log: '📜 Log', 
+  warn: '⚠️ Warning',
+  error: '❌ Error'
   });
-
 export const parameters = {
   controls: { expanded: true },
   backgrounds: {

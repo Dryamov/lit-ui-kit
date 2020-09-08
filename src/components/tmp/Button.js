@@ -6,7 +6,6 @@ import './button.css';
  */
 export const Button = ({ primary, backgroundColor, size, label, onClick }) => {
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
-console.log(111)
   return html`
     <button
       type="button"
